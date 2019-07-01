@@ -10,14 +10,6 @@ color whiteAlpha5 = color(255, 5);
 color whiteSolid = color(255);
 
 int frameWidth = 900;      // Width of wave curve
-int startXPos = 50;
-int curveXOffset = 25;
-
-int multiplier = 40;
-
-float curveH = 0;
-int var = 0;
-float shiftH = 0;
 
 Wave waveOne, waveTwo, waveThree;                    // Wave option objects
 
