@@ -56,4 +56,18 @@ class Frame {
      // shape function args are (shapeName, xPos, yPos)
      shape(shape, xFramePos, yFramePos);  
   }  
+  
+  // *******************************************************
+  // Draw centered text
+  void drawText(color textColor, int textSize, int textValue){
+    pushMatrix();
+    translate(xFramePos + wFrameSize, yFramePos + hFrameSize);
+    fill(textColor);
+    textSize(textSize);
+    textAlign(CENTER, CENTER);
+    // xPos and yPos for text is compensated by center alignment, so
+    // no need to cut width and height in half
+    text(textValue, 0, 0);
+    popMatrix();
+  }
 }
