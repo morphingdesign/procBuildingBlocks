@@ -1,3 +1,4 @@
+// Building block for animated wave
 
 // Color scheme
 color blackSolid = color(0);

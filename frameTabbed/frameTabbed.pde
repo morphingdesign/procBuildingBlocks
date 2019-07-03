@@ -1,4 +1,4 @@
-// 
+// Building block for tabbed frame with option for centered text
 
 // Color scheme
 color whiteAlpha100 = color(255, 100);

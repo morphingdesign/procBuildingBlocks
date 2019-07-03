@@ -1,4 +1,4 @@
-// 
+// Building block for framed rectangular grid
 
 // Color scheme
 color whiteAlpha100 = color(255, 100);
