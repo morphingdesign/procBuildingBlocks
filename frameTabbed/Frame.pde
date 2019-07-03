@@ -54,9 +54,6 @@ class Frame {
      
      // Position frame
      // shape function args are (shapeName, xPos, yPos)
-     // The xPos and yPos here are 0,0 because the vertex locations
-     // already account for the correct positioning. Therefore, the
-     // shape origin is at the default canvas origin.
      shape(shape, 0, 0);  
   }  
   
@@ -70,14 +67,7 @@ class Frame {
     textAlign(CENTER, CENTER);
     // xPos and yPos for text is compensated by translate(), so the
     // text origin is at align center 0,0.
-    text(textValue, 0, 0);
-    
-    // The following used to debug center point of text and coordinate
-    // with frame shape
-    //stroke(whiteSolid);
-    //strokeWeight(5);
-    //point(xFramePos, yFramePos);
-    
+    text(textValue, 0, 0);   
     popMatrix();
   }
 }
