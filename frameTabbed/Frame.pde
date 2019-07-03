@@ -54,20 +54,30 @@ class Frame {
      
      // Position frame
      // shape function args are (shapeName, xPos, yPos)
-     shape(shape, xFramePos, yFramePos);  
+     // The xPos and yPos here are 0,0 because the vertex locations
+     // already account for the correct positioning. Therefore, the
+     // shape origin is at the default canvas origin.
+     shape(shape, 0, 0);  
   }  
   
   // *******************************************************
   // Draw centered text
   void drawText(color textColor, int textSize, int textValue){
     pushMatrix();
-    translate(xFramePos + wFrameSize, yFramePos + hFrameSize);
+    translate(xFramePos + wFrameSize/2, yFramePos + hFrameSize/2);
     fill(textColor);
     textSize(textSize);
     textAlign(CENTER, CENTER);
-    // xPos and yPos for text is compensated by center alignment, so
-    // no need to cut width and height in half
+    // xPos and yPos for text is compensated by translate(), so the
+    // text origin is at align center 0,0.
     text(textValue, 0, 0);
+    
+    // The following used to debug center point of text and coordinate
+    // with frame shape
+    //stroke(whiteSolid);
+    //strokeWeight(5);
+    //point(xFramePos, yFramePos);
+    
     popMatrix();
   }
 }
