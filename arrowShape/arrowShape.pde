@@ -15,7 +15,7 @@ Arrow arrowOne;
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void setup() {
-    size(1000, 1000);
+    size(200, 200);
     // Parameter(Width, Height, Outline Visibility, Outline Color, 
     // Outline Weight, Fill Visibility, Fill Color)
     arrowOne = new Arrow(40, 80, true, whiteSolid, 1, true, whiteAlpha100);    
@@ -31,13 +31,13 @@ void draw() {
       // Pt to confirm location of origin in shape
       strokeWeight(5);
       stroke(redSolid);
-      point(width/2, height/2);
+      point(10, 10);
       
       // Parameter(xPos, yPos); pos is top left corner
-      arrowOne.drawArrow(width/2, height/2);
+      arrowOne.drawArrow(10, 10);
       
       // Parameter(xPos, yPos, Rotation Angle, Num of Arrows in Series, 
       // Spacing Between Arrows)
-      arrowOne.drawArrowSeries(width/2, height/2 + 100, 0, 4, 20);
+      arrowOne.drawArrowSeries(10, 10 + 100, 0, 4, 20);
   popMatrix();   
 }
