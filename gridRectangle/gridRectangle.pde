@@ -11,9 +11,9 @@ Grid rectGrid;
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void setup() {
-   size(1000, 1000);
+   size(200, 200);
    // Parameters(xPos, yPos, Width, Height, Line Color, Grid Spacing)
-   rectGrid = new Grid(50, 150, 900, 200, whiteAlpha100, 10);
+   rectGrid = new Grid(10, 10, 180, 180, whiteAlpha100, 10);
 }
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

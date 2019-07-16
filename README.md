@@ -1,6 +1,9 @@
 # procBuildingBlocks
 Library of basic building blocks isolated within individual sketches.
-arrowShape:
 <br />
 <br />
-![arrowShape](../master/images/arrowShape.PNG)
+
+| gridRectangle  | arrowShape |
+| ------------- | ------------- |
+| ![gridRectangle](../master/images/gridRectangle.PNG)  | ![arrowShape](../master/images/arrowShape.PNG)  |
+|   |   |
