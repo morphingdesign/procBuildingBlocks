@@ -15,10 +15,10 @@ Polygon polygon;
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void setup() {
-    size(1000, 1000);
+    size(200, 200);
     // Parameter(Polygon Radius, Num Of Sides, Outline Visibility, Outline Color, 
     // Outline Weight, Fill Visibility, Fill Color)
-    polygon = new Polygon(100, 8, true, whiteSolid, 2, true, whiteAlpha100);    
+    polygon = new Polygon(80, 8, true, whiteSolid, 2, true, whiteAlpha100);    
 }
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,6 +28,6 @@ void draw() {
   pushMatrix();
       translate(0, 0);
       // Parameter(xPos, yPos, Pts Vis, Pts Weight, Pts Color); centered pos
-      polygon.drawPolygon(width/2, height/2, true, 10, blueSolid);
+      polygon.drawPolygon(100, 100, true, 10, blueSolid);
   popMatrix();   
 }
