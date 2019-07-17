@@ -12,9 +12,9 @@ Frame tabFrame;
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 void setup() {
-   size(1000, 1000);
+   size(200, 200);
    // Parameters(xPos, yPos, Width, Height, Cut Size, Line Color, Line Weight, Fill Option, Fill Color)
-   tabFrame = new Frame(300, 200, 100, 100, 10, whiteAlpha100, 1, true, whiteAlpha15);
+   tabFrame = new Frame(10, 10, 180, 180, 10, whiteAlpha100, 1, true, whiteAlpha15);
 }
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
